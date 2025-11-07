@@ -1,0 +1,122 @@
+@import url("https://fonts.googleapis.com/css2?family=Joti+One&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-align: center;
+  font-family: "Joti One", serif;
+}
+
+body {
+  background-color: #faf0ca;
+}
+
+h1 {
+  background-color: #0d3b66;
+  color: #fff;
+  height: 5rem;
+  font-size: 2.5rem;
+  line-height: 5rem;
+}
+
+.choice {
+  height: 165px;
+  width: 165px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.choice:hover {
+  opacity: 75%;
+  cursor: pointer;
+  background-color: #f4d35e;
+}
+
+img {
+  height: 150px;
+  width: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  transition: transform 0.2s ease;
+}
+
+.choice:hover img {
+  transform: scale(1.1);
+}
+
+.choices {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  margin-top: 4rem;
+}
+
+.score-chart {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  margin-top: 3rem;
+  gap: 5rem;
+}
+
+#user-score,
+#comp-score {
+  font-size: 3rem;
+}
+
+.msg-container {
+  margin-top: 4rem;
+}
+
+#msg {
+  background-color: #0d3b66;
+  color: #fff;
+  font-size: 2rem;
+  display: inline;
+  padding: 1rem;
+  border-radius: 1rem;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.score {
+  background: #fff;
+  padding: 1rem 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+#reset-btn {
+  background-color: #0d3b66;
+  color: #fff;
+  font-size: 1.5rem;
+  margin-top: 3rem;
+  padding: 1rem;
+  border-radius: 1rem;
+  display: none;
+}
+
+@media (max-width: 600px) {
+  .choices {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  img {
+    height: 100px;
+    width: 100px;
+  }
+
+  .choice {
+    height: 115px;
+    width: 115px;
+  }
+
+  h1 {
+    font-size: 1.8rem;
+  }
+}
