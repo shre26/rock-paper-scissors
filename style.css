@@ -1,18 +1,20 @@
 @import url("https://fonts.googleapis.com/css2?family=Joti+One&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600;700&family=Press+Start+2P&display=swap');
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   text-align: center;
-  font-family: "Joti One", serif;
 }
 
 body {
   background-color: #faf0ca;
+  font-family: 'Fredoka', sans-serif;
 }
 
 h1 {
+  font-family: 'Press Start 2P', cursive;
   background-color: #0d3b66;
   color: #fff;
   height: 5rem;
@@ -52,7 +54,7 @@ img {
   justify-content: center;
   align-items: center;
   gap: 3rem;
-  margin-top: 4rem;
+  margin-top: 3rem;
 }
 
 .score-chart {
@@ -70,11 +72,12 @@ img {
 }
 
 .msg-container {
-  margin-top: 4rem;
+  margin: 3rem 2rem 2rem 2rem;
 }
 
 #msg {
   background-color: #0d3b66;
+  font-family: "Joti One", serif;
   color: #fff;
   font-size: 2rem;
   display: inline;
@@ -90,15 +93,51 @@ img {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
+.reset-container{
+  margin-top: 1rem;
+}
+
 #reset-btn {
   background-color: #0d3b66;
   color: #fff;
   font-size: 1.5rem;
-  margin-top: 3rem;
+  /* margin-top: 3rem; */
   padding: 1rem;
   border-radius: 1rem;
   display: none;
+  cursor: pointer;
 }
+
+#reset-btn:hover{
+  opacity: 85%;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #1a2645; 
+  color: #fdf5dc; 
+  text-align: center;
+  font-family: "Press Start 2P", monospace; /* matches your retro font */
+  font-size: 0.65rem;
+  padding: 12px 0;
+  box-shadow: 0 -3px 6px rgba(0, 0, 0, 0.3);
+  letter-spacing: 0.5px;
+}
+
+footer span {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+footer span::before {
+  content: "🎮";
+}
+
+
 
 @media (max-width: 600px) {
   .choices {
