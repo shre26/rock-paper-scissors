@@ -81,5 +81,6 @@ document.addEventListener("DOMContentLoaded", function () {
     compScorePara.textContent = 0;
     msg.textContent = "Play your move!";
     msg.style.backgroundColor = "#0d3b66";
+    resetBtn.style.display = "none";
   });
 });
