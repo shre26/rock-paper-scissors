@@ -18,12 +18,12 @@ A simple Rock-Paper-Scissors game built using **HTML**, **CSS**, and **JavaScrip
 HTML | CSS | JavaScript
 
 ## 📂 Project Structure
-rock-paper-scissors/
-├── images/
-├── index.html
-├── style.css
-├── script.js
-└── README.md
+rock-paper-scissors/  
+├── images/  
+├── index.html  
+├── style.css  
+├── script.js  
+└── README.md  
 
 ## ✨ Author
 **Shreya Gaonkar**
